@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# **Пет-проект Flylady: фронтенд**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Автор: Ольга Любимова
 
-## Available Scripts
+Репозиторий включает фронтенд приложения, предназначенного для автоматического определения ежедневных задач по поддержанию порядка и чистоты в доме по системе Flylady (Marla Silley). Пользователь создаёт дом, состоящий из пяти зон, и наполняет их задачами, которые выполняются по рабочим дням. Каждой зоне посвящена одна неделя месяца (первая и последняя неделя обычно не полные). Приложение определяет, какую задачу нужно выполнить сегодня, в зависимости от того, какая зона находится в работе.
 
-In the project directory, you can run:
+Бэкенд расположен [здесь](https://github.com/Aelia5/flylady-backend).
 
-### `npm start`
+**Реализован следующий функционал:**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Создание нового пользователя.
+2. Авторизация пользователя.
+3. Получение и редактирование данных текущего пользователя.
+4. Создание, удаление и переименование дома текущего пользователя.
+5. Поиск домов текущего пользователя.
+6. Создание и переименование зоны в доме текущего пользователя.
+7. Изменение порядка зон.
+8. Создание, удаление и редактирование задачи для определённого помещения.
+9. Отметка задачи как выполненной.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Реализованы следующие технологии:**
 
-### `npm test`
+Фронтенд:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Флексбокс-вёрстка.
+2. Грид-вёрстка.
+3. Адаптивная вёрстка с использованием медиазапросов.
+4. Анимация: прозрачность при наведении мыши.
+5. Локальное подключение шрифта.
+6. Создание проекта с помощью библиотеки React.
+7. Взаимодействие с сервером: отправка запросов методом GET, POST, PATCH, DELETE.
+8. Маршрутизация с защитой маршрутов, доступных только авторизованным пользователям.
+9. Сохранение данных в локальном хранилище.
 
-### `npm run build`
+**Используемые языки: HTML, CSS, JavaScript, JSX.**-->
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Инструкция по запуску**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Создайте новую папку и перейдите в неё.
+2. Клонируйте этот репозиторий.
+3. Установите зависимости: npm install.
+4. Для сборки выполните следующие команды:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- npm run build
+- npm install -g serve
+- serve -s build
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+8. В браузере откройте ссылку: http://localhost:3000/.
