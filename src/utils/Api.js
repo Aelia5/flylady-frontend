@@ -1,6 +1,6 @@
 import React from 'react';
 function Api() {
-  const BASE_URL = 'http://localhost:3001/api';
+  const BASE_URL = 'http://localhost:3001/flylady/api';
 
   function register(data) {
     return fetch(`${BASE_URL}/signup`, {
