@@ -1,6 +1,6 @@
 import React from 'react';
 function Api() {
-  const BASE_URL = 'http://aelia.website/api';
+  const BASE_URL = 'https://aelia.website/api';
 
   function register(data) {
     return fetch(`${BASE_URL}/signup`, {
