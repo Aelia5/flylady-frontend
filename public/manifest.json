@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Flylady",
+  "name": "Flylady - ежедневные задачи",
   "icons": [
     {
       "src": "favicon.ico",
