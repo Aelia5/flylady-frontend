@@ -13,12 +13,6 @@ function Today({ houses, housesError, handleFulfilTask, handleResetDate }) {
     year: 'numeric',
   });
 
-  // function getWeek(d, weekDay) {
-  //   const date = d.getDate();
-  //   const weekOfMonth = Math.ceil((date - 1 - weekDay) / 7);
-  //   return weekOfMonth;
-  // }
-
   const [weekend, setWeekend] = React.useState(weekDay === 6 || weekDay === 0);
 
   React.useEffect(() => {
@@ -29,12 +23,13 @@ function Today({ houses, housesError, handleFulfilTask, handleResetDate }) {
     }
   }, [weekDay]);
 
-  // const [weekNumber, setWeekNumber] = React.useState(getWeek(d, weekDay));
-  const weekNumber = Math.ceil((d.getDate() - 1 - weekDay) / 7);
-
-  // React.useEffect(() => {
-  //   getWeek(d, weekDay);
-  // }, [weekDay]);
+  let weekNumber;
+  const weekNumberCalc = Math.ceil((d.getDate() - 1 - weekDay) / 7);
+  if (weekNumberCalc > 4) {
+    weekNumber = 0;
+  } else {
+    weekNumber = weekNumberCalc;
+  }
 
   return (
     <main className="today">
